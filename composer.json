@@ -1,0 +1,15 @@
+{
+    "name": "evant/module-app",
+    "autoload": {
+        "psr-4": {
+            "Evant\\ModuleApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "evan-azemard",
+            "email": "evan-azemard@laplateforme.io"
+        }
+    ],
+    "require": {}
+}

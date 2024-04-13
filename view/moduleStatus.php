@@ -1,3 +1,9 @@
+<?php
+include './controller/ModuleStatus.php';
+$image_url = ModuleStatus::getPlot();
+
+?>
+<!--<img src="--><?php //echo $image_url; ?><!--" alt="Graphique" />-->
 <h2>Choice module</h2>
 <form method="post" class="mb-5">
     <div class="form-group">

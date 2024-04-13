@@ -11,5 +11,8 @@
             "email": "evan-azemard@laplateforme.io"
         }
     ],
-    "require": {}
+    "require": {
+        "szymach/c-pchart": "^3.0",
+        "phplot/phplot": "^8.0"
+    }
 }

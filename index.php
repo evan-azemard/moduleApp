@@ -1,5 +1,6 @@
 <?php
 include './controller/Rooter.php';
+$page = 'moduleAdd';
 //Return page
 if (isset($_GET['page'])) $getPage = $_GET['page'];
 if(isset($getPage)){

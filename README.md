@@ -1,6 +1,7 @@
 **Informations**
 
 * Bdd avec instruction sql pour ça création présente dans le dossier config.
+* n'oubliez pas composer update
  
 ***
 ***

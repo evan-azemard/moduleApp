@@ -1,9 +1,9 @@
 <?php
 //Add a module to my bdd
-include 'Bdd.php';
+include 'Db.php';
 
-class ModuleAdd extends Bdd{
+class ModuleAdd extends Db{
     public static function addModule($name,$type){
-        (new Bdd)->insertData($name,$type);
+        (new Db)->insertData($name,$type);
     }
 }

@@ -1,9 +1,24 @@
 <?php
 require 'vendor/autoload.php';
 use Phplot\Phplot\PHPlot;
+include 'Db.php';
 
 
-class ModuleStatus{
+class ModulesStatus extends Db {
+
+    //Select * from modules and datas
+    public static function getModules(){
+        return (new Db)->selectModules();
+    }
+    public static function getDatas(){
+        return (new Db)->selectDatas();
+    }
+
+    //redirects module page
+    public static function showModule($id){
+        header('Location: index.php?page=moduleStatus&id='.$id);
+    }
+
 
     public static function getPlot(){
 
@@ -57,8 +72,6 @@ class ModuleStatus{
         //
         //$plot->SetOutputFile('assets/images/graphique.png');
         //$plot->DrawGraph();
-
-
 
     }
 }

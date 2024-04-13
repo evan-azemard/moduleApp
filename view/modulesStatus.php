@@ -77,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] === 'POST'){
         <tr>
             <td><?= $datas[$i]['id_datas'] ?></td>
             <td><?= $datas[$i]['id_modules'] ?></td>
-            <td><?= $datas[$i]['module_name'] ?></td>
+            <td><?= $datas[$i]['name'] ?></td>
             <td><?= $datas[$i]['date_start'] ?></td>
             <td><?= $datas[$i]['date_end'] ?></td>
             <td><?= $datas[$i]['value_modules'] ?></td>

@@ -1,3 +1,23 @@
+<?php
+include 'controller/Api.php';
+
+if ($_SERVER["REQUEST_METHOD"] === 'GET'){
+    if (isset($_GET['id'])){
+        $req = new Api($_GET['id']);
+    }
+}
+?>
+<div id="data-container"></div>
+
+<script>
+    fetch('api/file.json')
+        .then(response => response.json())
+        .then(data => {
+            const dataContainer = document.getElementById('data-container');
+            dataContainer.innerHTML = JSON.stringify(data[0].name);
+        })
+        .catch(error => console.error('Error fetching data:', error));
+</script>
 <h2>ModuleStatus</h2>
 <table class="table table-striped">
     <thead class="table-dark">
